@@ -1,4 +1,4 @@
-# Intro - what is StockBot?
+# Intro - What is StockBot?
 StockBot is a service that tracks the stock level of products on supported websites. Users can interact with the bot through Discord and track any given product on Newegg, BestBuy, CanadaComputers, MemoryExpress and Amazon.
 
 
@@ -60,7 +60,7 @@ What you need:
 Great! Now the bot is ready to be activated!
 #### Uploading Bot Files
 19. Open FileZilla and use Site Manager to connect to the AWS instance. Once connected, navigate to the bot directory and upload all bot python files
-# Activating Bot
+# Running StockBot
 1. To activate the bot, move back to the console in PuTTY and navigate to the bot directory. Then, type the following command: ```python3.8 bot.py```
 
 
