@@ -32,36 +32,36 @@ What you need:
 1. Using AWS, launch an EC2 instance for ubuntu 20.04 LTS -> *(leave all settings as default except encrypt the volume, make sure to also have a key created!)*
 2. Use PuTTY to access the console, use port 22 and the public IPv4 DNS address that AWS gives you upon starting the instance -> *(username is ubuntu)*
 #### Install Firefox
-3. In the console type: sudo apt-get firefox
+3. In the console type: ```sudo apt-get firefox```
 #### Install Python3.8
-4. Type in console: sudo apt update and sudo apt -y upgrade
-5. Now, we need to install pip, use the command in console: sudo apt install -y python3-pip
+4. Type in console: ```sudo apt update``` and ```sudo apt -y upgrade```
+5. Now, we need to install pip, use the command in console: ```sudo apt install -y python3-pip```
 #### Install selenium for python and web driver
-6. Type in console: pip3 install selenium and pip3 install webdriver_manager then sudo apt install firefox-geckodriver
+6. Type in console: ```pip3 install selenium``` and ```pip3 install webdriver_manager``` then ```sudo apt install firefox-geckodriver```
 - We are going to use a virtual environment to run the bot from, to do this, we need python venv
-7. Use the command in console: sudo apt install python3-venv
+7. Use the command in console: ```sudo apt install python3-venv```
 #### Install Bot Dependencies
 - We need to use pip to install the redis, beautifulSoup and discord.py modules in python
-8. Now, we need to install redis-server, use the command in console: sudo apt install redis-server
-9. To install redis, type in console this command: pip3 install redis To install beautifulSoup: pip3 install bs4 Discord: pip3 install discord
+8. Now, we need to install redis-server, use the command in console: ```sudo apt install redis-server```
+9. To install redis, type in console this command: ```pip3 install redis``` To install beautifulSoup: ```pip3 install bs4``` Discord: ```pip3 install discord```
 #### Folders and Virtual Environment
 - Now let’s setup the folders and the virtual environment
-10. Make a “discordBot” directory by typing in console: mkdir discordBot Then move to that directory by typing: cd discordBot
+10. Make a “discordBot” directory by typing in console: ```mkdir discordBot``` Then move to that directory by typing: ```cd discordBot```
 - Now let’s make the virtual environment
-11. Type in console: python3 -m venv env
-12. Start by moving to the newly created env directory by typing in console: cd env Then finally, activate it with this command in console: source bin/activate -> *You should now see an (env) in front of the command prompt*
-13. Make a new directory called “bot” using the command: mkdir bot and move to it using in console: cd bot
+11. Type in console: ```python3 -m venv env```
+12. Start by moving to the newly created env directory by typing in console: ```cd env``` Then finally, activate it with this command in console: ```source bin/activate``` -> *You should now see an (env) in front of the command prompt*
+13. Make a new directory called “bot” using the command: ```mkdir bot``` and move to it using in console: ```cd bot```
 #### Storing the Bot Token
-14. In console, Navigate back to the discordBot directory by typing the following set of commands: cd and cd discordBot
-15. To start redis, use this commandredis-server -> *NOTE, this may produce an error saying “Address already in use”. This is good, it means redis is already running! If no errors occur, then redis just started and you are also good to move onto the next step!*
-16. Now let’s get into the redis client, type this into the console: redis-cli -> *An ip should now become your command prompt*
+14. In console, Navigate back to the discordBot directory by typing the following set of commands: ```cd``` and ```cd discordBot```
+15. To start redis, use this command: ```redis-server``` -> *NOTE, this may produce an error saying “Address already in use”. This is good, it means redis is already running! If no errors occur, then redis just started and you are also good to move onto the next step!*
+16. Now let’s get into the redis client, type this into the console: ```redis-cli``` -> *An ip should now become your command prompt*
 17. Now, let’s add our bots auth token! To get the token, revisit the applications developer portal website. You can find the token under the “Bot” tab right beside the bots profile picture. Simply select “Copy”.
-18. Now in the console type: set ‘AUTH_TOKEN’ ‘TOKEN HERE WITH SINGLE QUOTES SURROUNDING’ -> *The console should send back OK. To exit redis, use CTRL+D in console*
+18. Now in the console type: ```set ‘AUTH_TOKEN’ ‘TOKEN HERE WITH SINGLE QUOTES SURROUNDING’``` -> *The console should send back OK. To exit redis, use ```CTRL+D``` in console*
 Great! Now the bot is ready to be activated!
 #### Uploading Bot Files
 19. Open FileZilla and use Site Manager to connect to the AWS instance. Once connected, navigate to the bot directory and upload all bot python files
 # Activating Bot
-1. To activate the bot, move back to the console in PuTTY and navigate to the bot directory. Then, type the following command: python3.8 bot.py
+1. To activate the bot, move back to the console in PuTTY and navigate to the bot directory. Then, type the following command: ```python3.8 bot.py```
 
 
 
