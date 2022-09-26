@@ -1,0 +1,8 @@
+Updated as of: 2022-07-05
+
+Amazon, Newegg and MemoryExpress still work. Bestbuy and CanadaComputers need to be updated
+Need to check if price history is being stored correctly for Amazon
+
+2022-09-07:
+CanadaComputers fix in-progress, needs testing
+BestBuy fix in-progress, needs testing
