@@ -1,5 +1,6 @@
 # StockBot - Main Script
 # This script serves as the "hub" for the entire discord bot and executes other scripts accordingly
+# When running the bot, execute this script first
 # Designed and Developed by Davis Lenover
 # Version 0.93B
 
