@@ -12,6 +12,7 @@ What you need:
 - PuTTY -> *(or any SSL of your choice)*
 - FileZilla -> *(or any FTP software of your choice)*
 - Python 3.8.x
+- A Discord Server
 
 # Discord Setup
 1. Log into https://discord.com/developers/applications
