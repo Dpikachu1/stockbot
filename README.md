@@ -4,6 +4,8 @@ StockBot is a service that tracks the stock level of products on supported websi
 
 Please note that this bot does NOT attempt to purchase merchandise, it only acts a method for potential buyers to get notified when a product they are looking to buy becomes available.
 
+This bot is still in active development and as such, this manual is not fully complete!
+
 # Using StockBot
 #### This guide assumes some technical knowledge of Discord applications and Linux servers/AWS (if the bot is being used as a cloud service)
 
